@@ -10,9 +10,13 @@ class Modal extends React.Component {
 		...ModalProps
 	}
 
+	static defaultProps = {
+		showClose: false
+	}
+
 	render() {
 		const { title, showClose, children, onRequestClose, ...rest } = this.props;
-		console.log(onRequestClose);
+
 		return (
 			<ReactModal isOpen={ true }
 			            onRequestClose={ onRequestClose }
