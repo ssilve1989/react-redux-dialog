@@ -19,7 +19,7 @@
     "test:watch": "nwb test-react --server",
     "release": "standard-version",
     "commit": "git cz",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "prop-types": "15.5.10",
