@@ -1,6 +1,6 @@
 {
   "name": "react-redux-dialog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle React modal dialogs easily within the context of redux",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,7 +19,7 @@
     "test:watch": "nwb test-react --server",
     "release": "standard-version",
     "commit": "git cz",
-    "prepublish" : "npm run build"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "prop-types": "15.5.10",
