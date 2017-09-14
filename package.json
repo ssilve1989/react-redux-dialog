@@ -18,7 +18,8 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "release": "standard-version",
-    "commit": "git cz"
+    "commit": "git cz",
+    "prepublish" : "npm run build"
   },
   "dependencies": {
     "prop-types": "15.5.10",
