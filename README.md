@@ -4,9 +4,11 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
+Gracefully handle presenting Modal Dialogs via Redux. Leverages [react-modal](https://github.com/reactjs/react-modal).
+
 # Installation
 ```bash
-npm i -S react-redux-dialog
+npm i -S react redux react-redux react-redux-dialog
 ```
 
 # Usage
@@ -32,7 +34,7 @@ class App extends React.Component {
 			<div>
 			    <ModalContainer />
 			    {/* ... the rest of your component */}
-            </div>
+            		</div>
 		)
 	}
 }
@@ -43,18 +45,26 @@ class App extends React.Component {
 import { setModal } from 'react-redux-dialog';
 
 setModal(AnyComponent, {
-    componentProps: { ... },
+    componentProps: { /* Props your AnyComponent uses */ },
     modalProps: { ... }
 })
 ```
 
 And that's it! The ModalContainer will take care of the rest.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+### modalProps
+| Property | type | Required? | Description |
+|:--|:--|:--|:--
+title | string | no | A title for the modal, that will appear in the header |
+showClose | [boolean=false] | no | Show a close button for the modal
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+Additionally any other valid prop that [react-modal](https://github.com/reactjs/react-modal) uses will be passed along to the internal Modal.
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[build-badge]: https://img.shields.io/travis/ssilve1989/react-redux-dialog/master.png?style=flat-square
+[build]: https://travis-ci.org/ssilve1989/react-redux-dialog
+
+[npm-badge]: https://img.shields.io/npm/v/react-redux-dialog.svg.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-redux-dialog
+
+[coveralls-badge]: https://img.shields.io/coveralls/ssilve1989/react-redux-dialog/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/ssilve1989/react-redux-dialog
