@@ -1,7 +1,7 @@
 {
-	"name"            : "react-redux-modal",
+	"name"            : "react-redux-dialog",
 	"version"         : "1.0.0",
-	"description"     : "react-redux-modal React component",
+	"description"     : "Handle React modal dialogs easily within the context of redux",
 	"main"            : "lib/index.js",
 	"module"          : "es/index.js",
 	"files"           : [

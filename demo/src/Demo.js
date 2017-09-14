@@ -8,7 +8,7 @@ class Demo extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>react-redux-modal Demo</h1>
+				<h1>react-redux-dialog Demo</h1>
 				<ModalContainer />
 				<button onClick={ this.onClick }>Click me</button>
 			</div>

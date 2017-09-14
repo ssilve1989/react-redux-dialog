@@ -1,4 +1,4 @@
-# react-redux-modal
+# react-redux-dialog
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -6,7 +6,7 @@
 
 # Installation
 ```bash
-npm i -S react-redux-modal
+npm i -S react-redux-dialog
 ```
 
 # Usage
@@ -15,7 +15,7 @@ npm i -S react-redux-modal
 The reducer must be mounted at 'modal'.
 ```javascript
 import { combineReducers } from 'redux';
-import { reducer as modal } from 'react-redux-modal';
+import { reducer as modal } from 'react-redux-dialog';
 
 export default combineReducers({ 
     modal,
@@ -25,7 +25,7 @@ export default combineReducers({
 
 ## Mount the container
 ```jsx harmony
-import { ModalContainer } from 'react-redux-modal';
+import { ModalContainer } from 'react-redux-dialog';
 class App extends React.Component {
 	render() {
 		return (
@@ -40,7 +40,7 @@ class App extends React.Component {
 
 ## Dispatch a modal via setModal
 ```javascript
-import { setModal } from 'react-redux-modal';
+import { setModal } from 'react-redux-dialog';
 
 setModal(AnyComponent, {
     componentProps: { ... },
