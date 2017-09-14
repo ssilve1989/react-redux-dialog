@@ -1,8 +1,8 @@
 # react-redux-dialog
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Travis](https://img.shields.io/travis/ssilve1989/react-redux-dialog.svg)](https://travis-ci.org/ssilve1989/redux-session-manager-middleware)
+[![npm](https://img.shields.io/npm/v/react-redux-dialog.svg?style=flat-square)](https://www.npmjs.com/package/redux-session-manager-middleware)
+[![Coveralls](https://img.shields.io/coveralls/ssilve1989/react-redux-dialog.svg?style=flat-square)](https://coveralls.io/github/ssilve1989/react-redux-dialog)
 
 Gracefully handle presenting Modal Dialogs via Redux. Leverages [react-modal](https://github.com/reactjs/react-modal).
 
