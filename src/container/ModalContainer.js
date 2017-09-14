@@ -6,7 +6,8 @@ import { unsetModal } from '../actions';
 
 const ModalContainer = ({ state, unsetModal }) => {
 	if(!state) return null;
-	const { Component, props: { modalProps, componentProps } } = state;
+	const { Component, props: { modalProps={}, componentProps={} } } = state;
+
 	return (
 		<Modal onRequestClose={ unsetModal } { ...modalProps }>
 			<Component { ...componentProps } />
