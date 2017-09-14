@@ -59,12 +59,3 @@ title | string | no | A title for the modal, that will appear in the header |
 showClose | [boolean=false] | no | Show a close button for the modal
 
 Additionally any other valid prop that [react-modal](https://github.com/reactjs/react-modal) uses will be passed along to the internal Modal.
-
-[build-badge]: https://img.shields.io/travis/ssilve1989/react-redux-dialog/master.png?style=flat-square
-[build]: https://travis-ci.org/ssilve1989/react-redux-dialog
-
-[npm-badge]: https://img.shields.io/npm/v/react-redux-dialog.svg.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-redux-dialog
-
-[coveralls-badge]: https://img.shields.io/coveralls/ssilve1989/react-redux-dialog/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/ssilve1989/react-redux-dialog
