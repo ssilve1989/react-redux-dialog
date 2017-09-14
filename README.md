@@ -4,9 +4,11 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
+Gracefully handle presenting Modal Dialogs via Redux. Leverages [react-modal](https://github.com/reactjs/react-modal).
+
 # Installation
 ```bash
-npm i -S react-redux-dialog
+npm i -S react redux react-redux react-redux-dialog
 ```
 
 # Usage
@@ -32,7 +34,7 @@ class App extends React.Component {
 			<div>
 			    <ModalContainer />
 			    {/* ... the rest of your component */}
-            </div>
+            		</div>
 		)
 	}
 }
@@ -43,12 +45,20 @@ class App extends React.Component {
 import { setModal } from 'react-redux-dialog';
 
 setModal(AnyComponent, {
-    componentProps: { ... },
+    componentProps: { /* Props your AnyComponent uses */ },
     modalProps: { ... }
 })
 ```
 
 And that's it! The ModalContainer will take care of the rest.
+
+### modalProps
+| Property | type | Required? | Description |
+|:--|:--|:--|:--
+title | string | no | A title for the modal, that will appear in the header |
+showClose | [boolean=false] | no | Show a close button for the modal
+
+Additionally any other valid prop that [react-modal](https://github.com/reactjs/react-modal) uses will be passed along to the internal Modal.
 
 [build-badge]: https://img.shields.io/travis/ssilve1989/react-redux-dialog/master.png?style=flat-square
 [build]: https://travis-ci.org/ssilve1989/react-redux-dialog
