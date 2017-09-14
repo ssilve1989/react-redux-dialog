@@ -1,15 +1,11 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React  from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux';
+import Demo from './Demo';
+import store from './store';
 
-import Example from '../../src'
-
-class Demo extends Component {
-  render() {
-    return <div>
-      <h1>react-redux-modal Demo</h1>
-      <Example/>
-    </div>
-  }
-}
-
-render(<Demo/>, document.querySelector('#demo'))
+render(
+	<Provider store={ store }>
+		<Demo />
+	</Provider>, document.querySelector('#demo')
+)
