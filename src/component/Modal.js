@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactModal from 'react-modal';
-import PropTypes from 'prop-types';
-import { propTypes as ModalProps } from 'react-modal/lib/components/Modal';
+import React from 'react'
+import ReactModal from 'react-modal'
+import PropTypes from 'prop-types'
+import { propTypes as ModalProps } from 'react-modal/lib/components/Modal'
 
 class Modal extends React.Component {
 	static propTypes = {
@@ -15,7 +15,7 @@ class Modal extends React.Component {
 	}
 
 	render() {
-		const { title, showClose, children, onRequestClose, ...rest } = this.props;
+		const { title, showClose, children, onRequestClose, ...rest } = this.props
 
 		return (
 			<ReactModal isOpen={ true }
@@ -31,8 +31,8 @@ class Modal extends React.Component {
 					</article>
 				</section>
 			</ReactModal>
-		);
+		)
 	}
 }
 
-export default Modal;
+export default Modal
